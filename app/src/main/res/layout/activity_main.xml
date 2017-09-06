@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    >
+    <include
+        layout="@layout/titalbar_layout"
+        android:id="@+id/titlebar"
+        />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+    </android.support.v4.view.ViewPager>
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:background="#FFFFFF"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioButton_Camera"
+            style="@style/Style_RadioButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:checked="true"
+            android:drawableTop="@drawable/selector_camera"
+            android:text="监控" />
+
+        <RadioButton
+            android:id="@+id/radioButton_HomePage"
+            style="@style/Style_RadioButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:checked="true"
+            android:drawableTop="@drawable/selector_homepage"
+            android:text="主页" />
+
+        <RadioButton
+            android:id="@+id/radioButton_About"
+            style="@style/Style_RadioButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:checked="false"
+            android:drawableTop="@drawable/selector_about"
+            android:text="关于" />
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/imageView_splitline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/radioGroup"
+        android:background="@mipmap/line"
+        android:scaleType="fitXY" />
+
+</RelativeLayout>

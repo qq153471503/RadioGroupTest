@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <Button
+        android:id="@+id/button_exit"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="?attr/colorBackgroundFloating"
+        android:text="退出"
+        android:textColor="@android:color/black"
+        android:textSize="14sp"
+        android:layout_marginTop="35dp"
+        android:layout_below="@+id/button_aboutSoftware"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/button_aboutSoftware"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="55dp"
+        android:background="@android:color/white"
+        android:text="   关于软件"
+        android:textAlignment="textStart"
+        android:textSize="12sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>
